@@ -4,6 +4,7 @@
 #define GEOMETRIC_CONTROLLER_H
 
 #include <ros/ros.h>
+#include <dynamic_reconfigure/server.h>
 #include <ros/subscribe_options.h>
 #include <tf/transform_broadcaster.h>
 

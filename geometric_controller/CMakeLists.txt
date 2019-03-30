@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(geometric_controller)
 
-include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS} ${Eigen_INCLUDE_DIRS})
+include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS} ${Eigen_INCLUDE_DIRS} ${dynamic_reconfigure_PACKAGE_PATH}/cmake/cfgbuild.cmake)
 
-find_package(catkin_simple REQUIRED)
+find_package(catkin_simple REQUIRED COMPONENTS dynamic_reconfigure)
 catkin_simple(ALL_DEPS_REQUIRED)
 
 add_definitions(-std=c++11)
